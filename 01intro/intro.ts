@@ -4,4 +4,4 @@ let user = {
 }
 
 console.log("Raunak");
-console.log(user.email);// not error in js
+//console.log(user.email);// not error in js
