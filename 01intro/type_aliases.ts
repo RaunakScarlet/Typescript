@@ -4,9 +4,9 @@ type user = {
     email: string;
 }
 
-function getUser(User1: user) {
+function getUserDetails(User1: user) {
     console.log(User1.name,User1.id,User1.email);
     
 }
 
-getUser({name:"raunak",id:1,email:"scarlet@gmail.com"})
+getUserDetails({name:"raunak",id:1,email:"scarlet@gmail.com"})
