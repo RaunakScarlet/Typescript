@@ -1,0 +1,1 @@
+// also inherit the properties
