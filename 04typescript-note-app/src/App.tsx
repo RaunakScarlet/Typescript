@@ -1,37 +1,14 @@
-import { useState } from "react"
-import {Note} from './models/Note.model'
 
+import './App.css'
+import InputField from './components/InputField'
 
 function App() {
-    const [note, setNote] = useState<Note>({
-        id: new Date().toString(),
-        title: "Meeting",
-        text: "learn typescript",
-        color: "#abcabc",
-        date: new Date().toString(),
-    });
-
-    const change = () => {
-        setNote({
-            id: "",
-            title: "",
-        text: "",
-        color: "",
-        date: ""
-        })
-    }
+    
   return (
-      <>
-       {Object.entries(note).map(([key, value]) => (
-        <div key={key}>
-          {key}: {value}
-        </div>
-       ))}
-          
-          <button onClick={change}>
-              Click me
-          </button>
-      </>
+      <div className="App">
+          <h1 className="heading">Note App</h1>
+          <InputField/>
+      </div>
     
   )
 }
